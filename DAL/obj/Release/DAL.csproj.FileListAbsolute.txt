@@ -1,0 +1,14 @@
+D:\for_study\ASP.NET_L\EPAM.RD.2017F.ZHYVITSKAYA.MARYIA.02\DAL\bin\Release\DAL.dll.config
+D:\for_study\ASP.NET_L\EPAM.RD.2017F.ZHYVITSKAYA.MARYIA.02\DAL\bin\Release\DAL.dll
+D:\for_study\ASP.NET_L\EPAM.RD.2017F.ZHYVITSKAYA.MARYIA.02\DAL\bin\Release\DAL.pdb
+D:\for_study\ASP.NET_L\EPAM.RD.2017F.ZHYVITSKAYA.MARYIA.02\DAL\bin\Release\DAL.Interface.dll
+D:\for_study\ASP.NET_L\EPAM.RD.2017F.ZHYVITSKAYA.MARYIA.02\DAL\bin\Release\EntityFramework.dll
+D:\for_study\ASP.NET_L\EPAM.RD.2017F.ZHYVITSKAYA.MARYIA.02\DAL\bin\Release\EntityFramework.SqlServer.dll
+D:\for_study\ASP.NET_L\EPAM.RD.2017F.ZHYVITSKAYA.MARYIA.02\DAL\bin\Release\ORM.dll
+D:\for_study\ASP.NET_L\EPAM.RD.2017F.ZHYVITSKAYA.MARYIA.02\DAL\bin\Release\DAL.Interface.pdb
+D:\for_study\ASP.NET_L\EPAM.RD.2017F.ZHYVITSKAYA.MARYIA.02\DAL\bin\Release\ORM.pdb
+D:\for_study\ASP.NET_L\EPAM.RD.2017F.ZHYVITSKAYA.MARYIA.02\DAL\bin\Release\EntityFramework.xml
+D:\for_study\ASP.NET_L\EPAM.RD.2017F.ZHYVITSKAYA.MARYIA.02\DAL\bin\Release\EntityFramework.SqlServer.xml
+D:\for_study\ASP.NET_L\EPAM.RD.2017F.ZHYVITSKAYA.MARYIA.02\DAL\obj\Release\DAL.csprojResolveAssemblyReference.cache
+D:\for_study\ASP.NET_L\EPAM.RD.2017F.ZHYVITSKAYA.MARYIA.02\DAL\obj\Release\DAL.dll
+D:\for_study\ASP.NET_L\EPAM.RD.2017F.ZHYVITSKAYA.MARYIA.02\DAL\obj\Release\DAL.pdb

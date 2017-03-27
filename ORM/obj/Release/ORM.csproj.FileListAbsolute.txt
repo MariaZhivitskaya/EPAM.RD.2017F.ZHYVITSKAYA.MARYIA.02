@@ -1,0 +1,10 @@
+D:\for_study\ASP.NET_L\EPAM.RD.2017F.ZHYVITSKAYA.MARYIA.02\ORM\bin\Release\ORM.dll.config
+D:\for_study\ASP.NET_L\EPAM.RD.2017F.ZHYVITSKAYA.MARYIA.02\ORM\bin\Release\ORM.dll
+D:\for_study\ASP.NET_L\EPAM.RD.2017F.ZHYVITSKAYA.MARYIA.02\ORM\bin\Release\ORM.pdb
+D:\for_study\ASP.NET_L\EPAM.RD.2017F.ZHYVITSKAYA.MARYIA.02\ORM\bin\Release\EntityFramework.dll
+D:\for_study\ASP.NET_L\EPAM.RD.2017F.ZHYVITSKAYA.MARYIA.02\ORM\bin\Release\EntityFramework.SqlServer.dll
+D:\for_study\ASP.NET_L\EPAM.RD.2017F.ZHYVITSKAYA.MARYIA.02\ORM\bin\Release\EntityFramework.xml
+D:\for_study\ASP.NET_L\EPAM.RD.2017F.ZHYVITSKAYA.MARYIA.02\ORM\bin\Release\EntityFramework.SqlServer.xml
+D:\for_study\ASP.NET_L\EPAM.RD.2017F.ZHYVITSKAYA.MARYIA.02\ORM\obj\Release\ORM.dll
+D:\for_study\ASP.NET_L\EPAM.RD.2017F.ZHYVITSKAYA.MARYIA.02\ORM\obj\Release\ORM.pdb
+D:\for_study\ASP.NET_L\EPAM.RD.2017F.ZHYVITSKAYA.MARYIA.02\ORM\obj\Release\ORM.csprojResolveAssemblyReference.cache

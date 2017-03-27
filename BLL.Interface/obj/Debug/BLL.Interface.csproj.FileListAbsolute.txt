@@ -1,0 +1,5 @@
+D:\for_study\ASP.NET_L\EPAM.RD.2017F.ZHYVITSKAYA.MARYIA.02\BLL.Interface\bin\Debug\BLL.Interface.dll
+D:\for_study\ASP.NET_L\EPAM.RD.2017F.ZHYVITSKAYA.MARYIA.02\BLL.Interface\bin\Debug\BLL.Interface.pdb
+D:\for_study\ASP.NET_L\EPAM.RD.2017F.ZHYVITSKAYA.MARYIA.02\BLL.Interface\obj\Debug\BLL.Interface.dll
+D:\for_study\ASP.NET_L\EPAM.RD.2017F.ZHYVITSKAYA.MARYIA.02\BLL.Interface\obj\Debug\BLL.Interface.pdb
+D:\for_study\ASP.NET_L\EPAM.RD.2017F.ZHYVITSKAYA.MARYIA.02\BLL.Interface\obj\Debug\BLL.Interface.csprojResolveAssemblyReference.cache

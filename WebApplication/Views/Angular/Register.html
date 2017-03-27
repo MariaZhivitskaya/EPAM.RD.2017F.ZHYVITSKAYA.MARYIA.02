@@ -1,0 +1,30 @@
+﻿<div ng-controller="RegisterController">
+    <h2>Register</h2>
+
+    <div id="alertModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- dialog body -->
+                <div class="modal-body">
+                    <button type="button" id="btn" value="Close" class="close" data-dismiss="modal">×</button>
+                    {{response}}
+                </div>
+                <!-- dialog buttons -->
+                <div class="modal-footer">
+                    <button type="button" ng-click="alertmsg()" class="btn btn-primary">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p>
+        Email <input ng-model="user.email" />
+    </p>
+    <p>
+        Password <input type="password" ng-model="user.password"/>
+    </p>
+    <p>
+        Confirm password <input type="password" ng-model="confirmPwd" />
+    </p>
+    <input type="button" value="Register" ng-click="register()" />
+</div>

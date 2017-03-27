@@ -1,0 +1,21 @@
+﻿@if (Request.IsAuthenticated)
+{
+    //using (Html.BeginForm("Logoff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+    //{
+    //@Html.AntiForgeryToken()
+    <div ng-controller="LoginController">
+    <ul class="nav navbar-nav navbar-right">
+        <li><a href="/Angular/Index">Hello, @User.Identity.Name!</a>
+        <li><a href="" ng-click="logoff()" target="_self">Log off</a></li>
+    </ul>
+    </div>
+    //}
+}
+
+else
+{
+    <ul class="nav navbar-nav navbar-right">
+        <li><a href="/Angular/Register">Register</a></li>
+        <li><a href="/Angular/Login">Login</a></li>
+    </ul>
+}

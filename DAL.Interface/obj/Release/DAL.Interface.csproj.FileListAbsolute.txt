@@ -1,0 +1,4 @@
+D:\for_study\ASP.NET_L\EPAM.RD.2017F.ZHYVITSKAYA.MARYIA.02\DAL.Interface\bin\Release\DAL.Interface.dll
+D:\for_study\ASP.NET_L\EPAM.RD.2017F.ZHYVITSKAYA.MARYIA.02\DAL.Interface\bin\Release\DAL.Interface.pdb
+D:\for_study\ASP.NET_L\EPAM.RD.2017F.ZHYVITSKAYA.MARYIA.02\DAL.Interface\obj\Release\DAL.Interface.dll
+D:\for_study\ASP.NET_L\EPAM.RD.2017F.ZHYVITSKAYA.MARYIA.02\DAL.Interface\obj\Release\DAL.Interface.pdb

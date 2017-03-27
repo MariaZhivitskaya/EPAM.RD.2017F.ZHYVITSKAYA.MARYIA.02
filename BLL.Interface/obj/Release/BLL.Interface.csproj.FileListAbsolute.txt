@@ -1,0 +1,4 @@
+D:\for_study\ASP.NET_L\EPAM.RD.2017F.ZHYVITSKAYA.MARYIA.02\BLL.Interface\bin\Release\BLL.Interface.dll
+D:\for_study\ASP.NET_L\EPAM.RD.2017F.ZHYVITSKAYA.MARYIA.02\BLL.Interface\bin\Release\BLL.Interface.pdb
+D:\for_study\ASP.NET_L\EPAM.RD.2017F.ZHYVITSKAYA.MARYIA.02\BLL.Interface\obj\Release\BLL.Interface.dll
+D:\for_study\ASP.NET_L\EPAM.RD.2017F.ZHYVITSKAYA.MARYIA.02\BLL.Interface\obj\Release\BLL.Interface.pdb

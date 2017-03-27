@@ -1,0 +1,52 @@
+﻿<div ng-controller="AddImageController">
+    <h2>Add image</h2>
+
+    <div id="alertModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- dialog body -->
+                <div class="modal-body">
+                    <button type="button" id="btn" value="Close" class="close" data-dismiss="modal">×</button>
+                    {{response}}
+                </div>
+                <!-- dialog buttons -->
+                <div class="modal-footer">
+                    <button type="button" ng-click="alertmsg()" class="btn btn-primary">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--<div>-->
+        <p>
+            <!--Image <input ng-model="image"/>-->
+            Image <input type="file" name="file" id="file">
+        </p>
+        <!--<p>
+            <input type="submit" id="submit" value="Upload" />
+        </p>-->
+    <!--</div>-->
+
+
+    <p>
+        Select album
+        <select ng-options="album as album for album in albums" ng-model="selectedAlbum"></select>
+    </p>
+
+    <p>
+        Name <input ng-model="name"/>
+    </p>
+
+    <p>
+        Description (optional) <input ng-model="description" />
+    </p>
+    <p>
+        <input type="button" value="Add" ng-click="addImage()"/>
+        <!--<input type="submit" value="Add" ng-click="addImage()/>-->
+    </p>
+    <!--<input type="button" value="Add" ng-click="addImage()"/>-->
+
+    <!--<p>
+        <img id="preview" />
+    </p>-->
+</div>

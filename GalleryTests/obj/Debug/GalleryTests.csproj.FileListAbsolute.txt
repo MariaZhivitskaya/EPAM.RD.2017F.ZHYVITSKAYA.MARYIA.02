@@ -1,0 +1,9 @@
+D:\for_study\ASP.NET_L\EPAM.RD.2017F.ZHYVITSKAYA.MARYIA.02\GalleryTests\bin\Debug\GalleryTests.dll
+D:\for_study\ASP.NET_L\EPAM.RD.2017F.ZHYVITSKAYA.MARYIA.02\GalleryTests\bin\Debug\GalleryTests.pdb
+D:\for_study\ASP.NET_L\EPAM.RD.2017F.ZHYVITSKAYA.MARYIA.02\GalleryTests\bin\Debug\nunit.framework.dll
+D:\for_study\ASP.NET_L\EPAM.RD.2017F.ZHYVITSKAYA.MARYIA.02\GalleryTests\bin\Debug\WebDriver.dll
+D:\for_study\ASP.NET_L\EPAM.RD.2017F.ZHYVITSKAYA.MARYIA.02\GalleryTests\bin\Debug\nunit.framework.xml
+D:\for_study\ASP.NET_L\EPAM.RD.2017F.ZHYVITSKAYA.MARYIA.02\GalleryTests\bin\Debug\WebDriver.xml
+D:\for_study\ASP.NET_L\EPAM.RD.2017F.ZHYVITSKAYA.MARYIA.02\GalleryTests\obj\Debug\GalleryTests.csprojResolveAssemblyReference.cache
+D:\for_study\ASP.NET_L\EPAM.RD.2017F.ZHYVITSKAYA.MARYIA.02\GalleryTests\obj\Debug\GalleryTests.dll
+D:\for_study\ASP.NET_L\EPAM.RD.2017F.ZHYVITSKAYA.MARYIA.02\GalleryTests\obj\Debug\GalleryTests.pdb

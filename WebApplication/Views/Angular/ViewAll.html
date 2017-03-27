@@ -1,0 +1,19 @@
+﻿<div ng-controller="ViewAllController">
+    <h2>View all albums</h2>
+
+    <select ng-options="album.Text as album for album in albums" ng-model="selectedAlbum"
+            ng-change="changedValue()"></select>
+    <div ng-repeat="image in ">
+    </div>
+
+    <!--<div ng-repeat="image in SelectedAlbum.images">
+    <!--<p>{{image.name}}</p>
+    <img ng-src={{image.src}}>-->
+    <!--<input type="button" value="del" ng-click="RemoveImg($index)">-->
+
+    <!--</div>-->
+</div>
+
+    <!--<input ng-click="GetDescription()" type="button" value="get description"/>
+    <textarea ng-model="Description"></textarea>-->
+    <!--<my-user user="myLogUser">654654</my-user>-->

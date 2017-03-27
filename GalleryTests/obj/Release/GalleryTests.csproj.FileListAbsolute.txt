@@ -1,0 +1,9 @@
+D:\for_study\ASP.NET_L\EPAM.RD.2017F.ZHYVITSKAYA.MARYIA.02\GalleryTests\bin\Release\GalleryTests.dll
+D:\for_study\ASP.NET_L\EPAM.RD.2017F.ZHYVITSKAYA.MARYIA.02\GalleryTests\bin\Release\GalleryTests.pdb
+D:\for_study\ASP.NET_L\EPAM.RD.2017F.ZHYVITSKAYA.MARYIA.02\GalleryTests\bin\Release\nunit.framework.dll
+D:\for_study\ASP.NET_L\EPAM.RD.2017F.ZHYVITSKAYA.MARYIA.02\GalleryTests\bin\Release\WebDriver.dll
+D:\for_study\ASP.NET_L\EPAM.RD.2017F.ZHYVITSKAYA.MARYIA.02\GalleryTests\bin\Release\nunit.framework.xml
+D:\for_study\ASP.NET_L\EPAM.RD.2017F.ZHYVITSKAYA.MARYIA.02\GalleryTests\bin\Release\WebDriver.xml
+D:\for_study\ASP.NET_L\EPAM.RD.2017F.ZHYVITSKAYA.MARYIA.02\GalleryTests\obj\Release\GalleryTests.csprojResolveAssemblyReference.cache
+D:\for_study\ASP.NET_L\EPAM.RD.2017F.ZHYVITSKAYA.MARYIA.02\GalleryTests\obj\Release\GalleryTests.dll
+D:\for_study\ASP.NET_L\EPAM.RD.2017F.ZHYVITSKAYA.MARYIA.02\GalleryTests\obj\Release\GalleryTests.pdb
