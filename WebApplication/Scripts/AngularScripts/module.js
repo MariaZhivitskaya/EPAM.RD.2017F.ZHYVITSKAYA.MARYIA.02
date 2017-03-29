@@ -63,7 +63,7 @@ module.controller('RegisterController',
                 $("#alertModal").modal('show');
                 $scope.response = "Passwords don't match!";
             } else {
-                dataCenter.SendRegisterData($rootScope.user).then(function (response) {
+                dataCenter.SendRegisterData($scope.user).then(function (response) {
                     if (response.data === "False") {
                         $("#alertModal").modal('show');
                         $scope.response = "Sorry, an error occured...";
@@ -103,6 +103,24 @@ module.controller('ViewAllController',
 
         $scope.correctDate = function (badDate) {
             return $filter('date')(badDate, "dd/MM/yyyy");
+        }
+
+        $scope.close = function () {
+            var modal = document.getElementById("myModal");
+            modal.style.display = "none";
+        };
+
+        $scope.zoom = function (imageId) {
+
+            var modal = document.getElementById("myModal");
+
+            var img = document.getElementById("img" + imageId);
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+
+            modal.style.display = "block";
+            modalImg.src = img.src;
+            captionText.innerHTML = $scope.image.description;
         }
     }
 ]);
@@ -183,7 +201,11 @@ module.controller('AddImageController',
         $scope.addImage = function () {
             if ($scope.name === "") {
                 $("#alertModal").modal('show');
-                $scope.response = "Please, add a name!";
+                $scope.response = "Please, add picture name!";
+            } else if ($scope.albums.length === 0) {
+                $("#alertModal").modal('show');
+                $scope.response = "You need to create an album before adding an image!";
+                window.location.href = "/Angular/AddAlbum";
             } else {
                 var reader = new FileReader();
                 var imgFileInput = document.getElementById('file');
