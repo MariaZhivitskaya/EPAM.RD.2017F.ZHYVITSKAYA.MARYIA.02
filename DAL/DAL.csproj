@@ -53,6 +53,7 @@
     <Compile Include="Concrete\ExtensionRepository.cs" />
     <Compile Include="Concrete\ImageRepository.cs" />
     <Compile Include="Concrete\RoleRepository.cs" />
+    <Compile Include="Concrete\SiteDescriptionRepository.cs" />
     <Compile Include="Concrete\UnitOfWork.cs" />
     <Compile Include="Concrete\UserRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

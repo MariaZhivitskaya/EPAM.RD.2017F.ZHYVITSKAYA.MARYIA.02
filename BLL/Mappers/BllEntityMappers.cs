@@ -104,5 +104,23 @@ namespace BLL.Mappers
                 Name = dalExtension.Name
             };
         }
+
+        public static DalSiteDescription ToDalSiteDescription(this SiteDescriptionEntity descriptionEntity)
+        {
+            return new DalSiteDescription()
+            {
+                Id = descriptionEntity.Id,
+                Text = descriptionEntity.Text
+            };
+        }
+
+        public static SiteDescriptionEntity ToBllSiteDescription(this DalSiteDescription dalDescription)
+        {
+            return new SiteDescriptionEntity()
+            {
+                Id = dalDescription.Id,
+                Text = dalDescription.Text
+            };
+        }
     }
 }

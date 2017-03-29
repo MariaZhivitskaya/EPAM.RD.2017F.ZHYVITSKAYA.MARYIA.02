@@ -44,12 +44,14 @@
     <Compile Include="Entities\ExtensionEntity.cs" />
     <Compile Include="Entities\ImageEntity.cs" />
     <Compile Include="Entities\RoleEntity.cs" />
+    <Compile Include="Entities\SiteDescriptionEntity.cs" />
     <Compile Include="Entities\UserEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\IAlbumService.cs" />
     <Compile Include="Services\IExtensionService.cs" />
     <Compile Include="Services\IImageService.cs" />
     <Compile Include="Services\IRoleService.cs" />
+    <Compile Include="Services\ISiteDescriptionService.cs" />
     <Compile Include="Services\IUserService.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

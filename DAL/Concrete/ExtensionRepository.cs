@@ -30,7 +30,12 @@ namespace DAL.Concrete
 
         public DalExtension GetById(int key)
         {
-            throw new System.NotImplementedException();
+            var ormExt = _context.Set<Extension>().FirstOrDefault(ext => ext.Id == key);
+            return new DalExtension()
+            {
+                Id = ormExt.Id,
+                Name = ormExt.Name
+            };
         }
 
         public void Create(DalExtension e)

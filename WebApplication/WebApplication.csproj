@@ -196,6 +196,7 @@
     <Compile Include="Controllers\AddController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ImageController.cs" />
+    <Compile Include="Controllers\IndexController.cs" />
     <Compile Include="Controllers\ViewAllController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -285,6 +286,7 @@
   <ItemGroup>
     <Folder Include="Views\Add\" />
     <Folder Include="Views\Image\" />
+    <Folder Include="Views\Index\" />
     <Folder Include="Views\ViewAll\" />
   </ItemGroup>
   <ItemGroup>

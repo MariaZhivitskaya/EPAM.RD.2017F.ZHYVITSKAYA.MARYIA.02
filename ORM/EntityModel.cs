@@ -16,5 +16,6 @@ namespace ORM
         public virtual DbSet<Image> Images { get; set; }
         public virtual DbSet<Album> Likes { get; set; }
         public virtual DbSet<Extension> Extensions { get; set; }
+        public virtual DbSet<SiteDescription> SiteDescriptions { get; set; }
     }
 }

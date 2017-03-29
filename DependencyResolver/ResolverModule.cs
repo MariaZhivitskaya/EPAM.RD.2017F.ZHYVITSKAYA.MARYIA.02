@@ -38,12 +38,14 @@ namespace DependencyResolver
             kernel.Bind<IImageService>().To<ImageService>();
             kernel.Bind<IAlbumService>().To<AlbumService>();
             kernel.Bind<IExtensionService>().To<ExtensionService>();
+            kernel.Bind<ISiteDescriptionService>().To<SiteDescriptionService>();
 
             kernel.Bind<IUserRepository>().To<UserRepository>();
             kernel.Bind<IRoleRepository>().To<RoleRepository>();
             kernel.Bind<IImageRepository>().To<ImageRepository>();
             kernel.Bind<IAlbumRepository>().To<AlbumRepository>();
             kernel.Bind<IExtensionRepository>().To<ExtensionRepository>();
+            kernel.Bind<ISiteDescriptionRepository>().To<SiteDescriptionRepository>();
         }
     }
 }

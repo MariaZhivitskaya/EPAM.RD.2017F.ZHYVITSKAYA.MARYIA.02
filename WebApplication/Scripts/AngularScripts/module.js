@@ -26,10 +26,10 @@ var module = angular.module('albumsApp', ['ngRoute']);
 module.controller('LoginController',
 [
     '$scope', '$rootScope', 'dataCenter', '$http', function ($scope, $rootScope, dataCenter, $http) {
-        $scope.user = {};
+        $rootScope.user = {};
 
         $scope.login = function () {
-            dataCenter.SendLoginData($scope.user).then(function (response) {
+            dataCenter.SendLoginData($rootScope.user).then(function (response) {
                 if (response.data === "False") {
                     $("#alertModal").modal('show');
                     $scope.response = "Sorry, an error occured...";
@@ -55,7 +55,7 @@ module.controller('LoginController',
 module.controller('RegisterController',
 [
     '$scope', '$rootScope', 'dataCenter', '$http', function ($scope, $rootScope, dataCenter, $http) {
-        $scope.user = {};
+        $rootScope.user = {};
         $scope.confirmPwd = null;
 
         $scope.register = function () {
@@ -63,7 +63,7 @@ module.controller('RegisterController',
                 $("#alertModal").modal('show');
                 $scope.response = "Passwords don't match!";
             } else {
-                dataCenter.SendRegisterData($scope.user).then(function (response) {
+                dataCenter.SendRegisterData($rootScope.user).then(function (response) {
                     if (response.data === "False") {
                         $("#alertModal").modal('show');
                         $scope.response = "Sorry, an error occured...";
@@ -89,35 +89,51 @@ module.controller('ViewAllController',
 
         dataCenter.GetAllAlbums().then(function (response) {
             $scope.albums = response.data;
+            $scope.selectedAlbum = $scope.albums[0];
+            if ($scope.albums.length !== 0) {
+                $scope.imgs = $scope.changedValue();
+            }
         });
 
         $scope.changedValue = function () {
             dataCenter.GetImgs($scope.selectedAlbum).then(function (response) {
                 $scope.imgs = response.data;
             });
-
-
-            //$scope.albums = dataCenter.GetAll();
-
-            //$scope.selectedAlbum = $scope.albums[0];
-
-            //$scope.RemoveImg = function(index) {
-            //    dataCenter.RemoveImage($scope.SelectedAlbum, index);
-            //}
         }
+
+        $scope.correctDate = function (badDate) {
+            return $filter('date')(badDate, "dd/MM/yyyy");
+        }
+
+        //$scope.arrayBufferToBase64 = function (buffer) {
+        //    var binary = '';
+        //    var bytes = new Uint8Array(buffer);
+        //    var len = bytes.byteLength;
+        //    for (var i = 0; i < len; i++) {
+        //        binary += String.fromCharCode(bytes[i]);
+        //    }
+        //    return window.btoa(binary);
+        //}
     }
 ]);
 
 module.controller('IndexController',
 [
     '$scope', '$rootScope', 'dataCenter', '$http', function ($scope, $rootScope, dataCenter, $http) {
-        //$scope.albums = dataCenter.GetAll();
+        $scope.description = null;
+        $scope.showBth = true;
 
-        //$scope.selectedAlbum = $scope.albums[0];
+        dataCenter.GetSiteDescription().then(function (response) {
+            $scope.description = response.data;
+            $scope.showBth = true;
+        });
 
-        //$scope.RemoveImg = function(index) {
-        //    dataCenter.RemoveImage($scope.SelectedAlbum, index);
-        //}
+        
+
+        //dataCenter.GetUserRole().then(function (response) {
+        //    if ($rootScope.user.id === 1)
+        //        $scope.showBtn = true;
+        //});
     }
 ]);
 
@@ -213,6 +229,14 @@ module.controller('AddImageController',
     }
 ]);
 
+module.filter('jsonDate', ['$filter', function ($filter) {
+    return function (input, format) {
+        return (input)
+               ? $filter('date')(parseInt(input.substr(6)), format)
+               : '';
+    };
+}]);
+
 module.service('dataCenter', [
     '$http', function ($http) {
         return {
@@ -275,7 +299,23 @@ module.service('dataCenter', [
             GetImgs: function (selectedAlbum) {
                 var response = $http({
                     method: "get",
-                    url: 'http://localhost:64850/ViewAll/GetImgs=' + selectedAlbum
+                    url: 'http://localhost:64850/ViewAll/GetImgs?selectedAlbum=' + selectedAlbum
+                });
+                return response;
+            },
+
+            GetSiteDescription: function () {
+                var response = $http({
+                    method: "get",
+                    url: 'http://localhost:64850/Index/GetDescription'
+                });
+                return response;
+            },
+
+            GetUserRole: function () {
+                var response = $http({
+                    method: "get",
+                    url: 'http://localhost:64850/Index/GetRole'
                 });
                 return response;
             }

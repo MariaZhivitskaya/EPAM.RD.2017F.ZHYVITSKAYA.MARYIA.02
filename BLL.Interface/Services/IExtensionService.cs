@@ -8,5 +8,6 @@ namespace BLL.Interface.Services
         IEnumerable<ExtensionEntity> GetAllExtensionEntities();
         void CreateExtension(ExtensionEntity extension);
         int GetExtensionId(string extensionName);
+        ExtensionEntity GetExtensionEntity(int id);
     }
 }

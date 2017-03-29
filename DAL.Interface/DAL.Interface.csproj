@@ -44,6 +44,7 @@
     <Compile Include="DTO\DalExtension.cs" />
     <Compile Include="DTO\DalImage.cs" />
     <Compile Include="DTO\DalRole.cs" />
+    <Compile Include="DTO\DalSiteDescription.cs" />
     <Compile Include="DTO\DalUser.cs" />
     <Compile Include="DTO\IEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -52,6 +53,7 @@
     <Compile Include="Repository\IImageRepository.cs" />
     <Compile Include="Repository\IRepository.cs" />
     <Compile Include="Repository\IRoleRepository.cs" />
+    <Compile Include="Repository\ISiteDescriptionRepository.cs" />
     <Compile Include="Repository\IUnitOfWork.cs" />
     <Compile Include="Repository\IUserRepository.cs" />
   </ItemGroup>

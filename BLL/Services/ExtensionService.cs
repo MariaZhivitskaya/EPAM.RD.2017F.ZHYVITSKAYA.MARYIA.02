@@ -33,5 +33,10 @@ namespace BLL.Services
         {
             return _extensionRepository.GetExtensionId(extensionName);
         }
+
+        public ExtensionEntity GetExtensionEntity(int id)
+        {
+            return _extensionRepository.GetById(id).ToBllExtension();
+        }
     }
 }

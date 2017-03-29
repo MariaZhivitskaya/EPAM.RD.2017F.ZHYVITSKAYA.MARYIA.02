@@ -1,10 +1,9 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-	<meta charset="utf-8" />
-</head>
-<body>
+﻿<div ng-controller="IndexController">
+    <h2>Index page</h2>
 
-</body>
-</html>
+    <div class="form-group" style="margin-top: 2%">
+        <span class="lead" style="margin-left: 10%; margin-right: 10%;">{{description}}</span>
+        <br/>
+        <button class="btn btn-primary" ng-show="{{showBtn}}" style="margin-left: 10%;">Edit site description</button>
+    </div>
+</div>

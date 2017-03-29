@@ -1,19 +1,18 @@
 ﻿<div ng-controller="ViewAllController">
     <h2>View all albums</h2>
 
-    <select ng-options="album.Text as album for album in albums" ng-model="selectedAlbum"
+    <select ng-options="album as album for album in albums" ng-model="selectedAlbum"
             ng-change="changedValue()"></select>
-    <div ng-repeat="image in ">
+    <div class="img-responsive" style="margin-top: 10%">
+        <div ng-repeat="image in imgs">
+            <div class="form-group" style="margin-top: 2%">
+                <span class="badge" style="margin-left: 30%;">Name: {{image.Name}}</span>
+                <br/>
+                <span class="badge" style="margin-left: 30%;">Description: {{image.Description}}</span>
+                <img ng-src="/ViewAll/GetImg?imageId={{(image.Id)}}" alt="image" style="margin-left: 30%; width: 40%"/>
+                <br />
+                <span class="badge" style="margin-left: 30%;">Creation date: {{image.CreationDate | jsonDate : 'yyyy-MM-dd'}}</span>
+            </div>
+        </div>
     </div>
-
-    <!--<div ng-repeat="image in SelectedAlbum.images">
-    <!--<p>{{image.name}}</p>
-    <img ng-src={{image.src}}>-->
-    <!--<input type="button" value="del" ng-click="RemoveImg($index)">-->
-
-    <!--</div>-->
 </div>
-
-    <!--<input ng-click="GetDescription()" type="button" value="get description"/>
-    <textarea ng-model="Description"></textarea>-->
-    <!--<my-user user="myLogUser">654654</my-user>-->
