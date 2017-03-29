@@ -21,5 +21,10 @@ namespace BLL.Services
         {
             return _descriptionRepository.GetById(id).ToBllSiteDescription();
         }
+
+        public void ChangeText(int id, string text)
+        {
+            _descriptionRepository.Update(id, text);
+        }
     }
 }

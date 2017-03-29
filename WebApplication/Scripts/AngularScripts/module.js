@@ -26,10 +26,10 @@ var module = angular.module('albumsApp', ['ngRoute']);
 module.controller('LoginController',
 [
     '$scope', '$rootScope', 'dataCenter', '$http', function ($scope, $rootScope, dataCenter, $http) {
-        $rootScope.user = {};
+        $scope.user = {};
 
         $scope.login = function () {
-            dataCenter.SendLoginData($rootScope.user).then(function (response) {
+            dataCenter.SendLoginData($scope.user).then(function (response) {
                 if (response.data === "False") {
                     $("#alertModal").modal('show');
                     $scope.response = "Sorry, an error occured...";
@@ -55,7 +55,7 @@ module.controller('LoginController',
 module.controller('RegisterController',
 [
     '$scope', '$rootScope', 'dataCenter', '$http', function ($scope, $rootScope, dataCenter, $http) {
-        $rootScope.user = {};
+        $scope.user = {};
         $scope.confirmPwd = null;
 
         $scope.register = function () {
@@ -104,16 +104,6 @@ module.controller('ViewAllController',
         $scope.correctDate = function (badDate) {
             return $filter('date')(badDate, "dd/MM/yyyy");
         }
-
-        //$scope.arrayBufferToBase64 = function (buffer) {
-        //    var binary = '';
-        //    var bytes = new Uint8Array(buffer);
-        //    var len = bytes.byteLength;
-        //    for (var i = 0; i < len; i++) {
-        //        binary += String.fromCharCode(bytes[i]);
-        //    }
-        //    return window.btoa(binary);
-        //}
     }
 ]);
 
@@ -121,19 +111,30 @@ module.controller('IndexController',
 [
     '$scope', '$rootScope', 'dataCenter', '$http', function ($scope, $rootScope, dataCenter, $http) {
         $scope.description = null;
-        $scope.showBth = true;
+        $scope.hideBth = true;
+        $scope.userRole = null;
 
         dataCenter.GetSiteDescription().then(function (response) {
             $scope.description = response.data;
-            $scope.showBth = true;
         });
 
-        
+        dataCenter.GetUserRole().then(function (response) {
+            $scope.userRole = response.data;
+            if ($scope.userRole === 1) {
+                $scope.hideBth = false;
+            }
+        });
 
-        //dataCenter.GetUserRole().then(function (response) {
-        //    if ($rootScope.user.id === 1)
-        //        $scope.showBtn = true;
-        //});
+        $scope.updateText = function () {
+            dataCenter.SendSiteDescription($scope.description);
+
+            $("#alertModal").modal('show');
+            $scope.response = "Site description successfully updated!";
+
+            $scope.alertmsg = function () {
+                $("#alertModal").modal('hide');
+            };
+        };
     }
 ]);
 
@@ -318,6 +319,13 @@ module.service('dataCenter', [
                     url: 'http://localhost:64850/Index/GetRole'
                 });
                 return response;
+            },
+
+            SendSiteDescription: function (text) {
+                $http({
+                    method: "post",
+                    url: 'http://localhost:64850/Index/SetText?text=' + text
+                });
             }
         }
     }

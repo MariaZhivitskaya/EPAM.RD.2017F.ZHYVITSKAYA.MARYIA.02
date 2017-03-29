@@ -34,5 +34,12 @@ namespace DAL.Concrete
         {
             throw new System.NotImplementedException();
         }
+
+        public void Update(int id, string text)
+        {
+            var ormDesc = _context.Set<SiteDescription>().FirstOrDefault(desc => desc.Id == id);
+            ormDesc.Text = text;
+            _context.SaveChanges();
+        }
     }
 }
